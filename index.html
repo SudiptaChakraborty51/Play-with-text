@@ -13,13 +13,23 @@
         <nav class="navbar">Play with Text</nav>
         <main class="container">
             <input type="text" placeholder="Enter your text here" id="user-input">
-            <button id="show-btn">show</button>
             <div class="btn">
-            <button id="btn-large">+</button>
-            <button id="btn-small">-</button>
-            <button id="btn-red">Red</button>
-            <button id="btn-blue">Blue</button>
+            <select class="btn-style" id="font-family">
+                <option selected disabled>Select font style</option>
+                <option value="monospace">Monospace</option>
+                <option value="serif">Serif</option>
+                <option value="sans-serif">Sans-serif</option>
+                <option value="cursive">Cursive</option>
+                <option value="fantasy">Fantasy</option>
+            </select>
+            <input type="color" id="color-picker" class="btn-style" value="black">
+            <button id="btn-large" class="btn-style">+</button>
+            <button id="btn-small" class="btn-style">-</button>
+            <button id="btn-bold" class="btn-style">B</button>
+            <button id="btn-italic" class="btn-style">I</button>
+            <button id="btn-underline" class="btn-style">U</button>
             </div>
+            <button id="show-btn">show</button>
             <div id="output">Output will come here....</div>
         </main>
         <footer class="footer">
